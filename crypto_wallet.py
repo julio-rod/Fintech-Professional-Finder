@@ -56,13 +56,16 @@ def send_transaction(w3, account, to, wage):
     # Calculate gas estimate
     gasEstimate = w3.eth.estimateGas({"to": to, "from": account.address, "value": value})
 
+    # Fetch the gas price based on the set gas price strategy
+    gas_price = w3.eth.generateGasPrice()
+
     # Construct a raw transaction
     raw_tx = {
         "to": to,
         "from": account.address,
         "value": value,
         "gas": gasEstimate,
-        "gasPrice": 0,
+        "gasPrice": gas_price, # use the fetched gas price
         "nonce": w3.eth.getTransactionCount(account.address)
     }
 
