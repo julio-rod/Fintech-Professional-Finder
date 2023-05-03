@@ -13,7 +13,7 @@ Fintech Professional Finder (FPF) enables users to find, hire, and pay fintech p
 
 ## Technologies
 
-- Python 3.7 or later
+- Python 3.10.11
 - Streamlit
 - Web3.py
 - Ganache
@@ -42,7 +42,7 @@ Fintech Professional Finder (FPF) enables users to find, hire, and pay fintech p
 
 1. Clone this repository to your local machine: `git clone`
 
-2. Navigate to the project directory. `cd your_repository`
+2. Navigate to the project directory. `cd your_directory`
 
 3. Run the following command in the terminal to make the script executable: `chmod +x setup.sh`
 4. Run the script using: `./setup.sh`

@@ -7,3 +7,4 @@ eth-utils==1.10.0
 web3==5.25.0
 bip44==0.1.0
 mnemonic==0.20.0
+python==3.10.11
